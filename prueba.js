@@ -1,34 +1,15 @@
-var prompt = require("prompt-sync")();
-function Menu(){
-var option = 0;
-console.log(option);
-console.log("\nMenu")
-console.log("1. Convertir Celcius a Fahrenheit");
-console.log("2. Calcurar Indeice de Masa Corpotal (IMC) ");
-console.log("3. Generar nombre de usuario");
-console.log("4. Generar Nuemro Fibonacci");
-console.log("5. Salir")
-option = prompt ("Seleccione una opcion: ");
-option = Number(option);
+const promot = require("prompt-sync");
 
-switch (option){
-    case "1":
-        console.log("1");
-        Menu();
-    case "2":
-        console.log("2");
-    case "3":
-        console.log("3");
-            Menu();
-    case "4":
-        console.log("4");
-    case "5":
-        break;
-        default:
-            console.log("\nPor favir ingrese una opcion valida");
-            Menu();
+function MayorMenorLista(){
+    let ListaNumero = [2, 9, 17, 22, 29, 90, 92, 82];
+
+    let maximo = 0
+    for (let i = 0; i <ListaNumero.length; i++){
+
+        if (maximo<=ListaNumero[i]){
+                maximo = ListaNumero[i]
+        }
     }
+    console.log(maximo)
 }
-
-Menu()
-    
+MayorMenorLista()

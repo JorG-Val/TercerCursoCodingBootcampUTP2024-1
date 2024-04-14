@@ -21,10 +21,10 @@ function invertirLista(lista) {
 
 // Ejecución de funciones con ejemplos dados
 console.log("Ejecutando función de Mayores y Menores:");
-encontrarMayoresMenores([2, 9, 29, 92, 90]);
+encontrarMayoresMenores([5, 12, 3, 8, 1]);
 
 console.log("\nEjecutando función de Concatenación de Listas:");
-concatenarOrdenarListas([92, 9, 2], [33, 99, 3]);
+concatenarOrdenarListas([4, 9, 2], [7, 5, 1]);
 
 console.log("\nEjecutando función de Inversión de Lista:");
-invertirLista([2, 9, 29, 92, 90]);
+invertirLista([3, 6, 9, 12, 15]);

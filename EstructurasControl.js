@@ -21,3 +21,32 @@ function calculadoraFactorial(){
     }
 }
 calculadoraFactorial()
+
+const promot = require("prompt-sync");
+
+function MayorMenorLista(){
+    let ListaNumero = [2, 9, 17, 22, 29, 90, 92, 82];
+
+    let maximo = 0
+    for (let i = 0; i <ListaNumero.length; i++){
+
+        if (maximo<=ListaNumero[i]){
+                maximo = ListaNumero[i]
+        }
+    }
+    console.log(maximo)
+}
+MayorMenorLista()
+
+function contarVocales() {
+    let frase = prompt("Ingrese una frase para contar las vocales:"); // Almacena la frase ingresada por el usuario para contar las vocales.
+    let vocales = { 'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0 }; // Almacena un objeto con las vocales como claves y su recuento inicializado en 0.
+    for (let letra of frase.toLowerCase()) { // Itera sobre cada letra de la frase en minúsculas.
+        if (letra in vocales) { // Comprueba si la letra es una vocal.
+            vocales[letra]++; // Incrementa el contador de la vocal correspondiente.
+        }
+    }
+    for (let vocal in vocales) { // Itera sobre cada vocal en el objeto 'vocales'.
+        console.log("La vocal '" + vocal + "' aparece " + vocales[vocal] + " veces."); // Muestra el recuento de cada vocal.
+    }
+}

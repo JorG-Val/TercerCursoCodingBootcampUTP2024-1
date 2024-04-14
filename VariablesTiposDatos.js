@@ -3,13 +3,13 @@ const prompt = require('prompt-sync')();
 //console.log(PrimerDato)
 
 //calculo de celsius a fahrenheit
-function ComversionDeTemperatura(){
+function ConversionDeTemperatura(){
     //variable temperatura
     let temperatura = prompt ("Por favor ingrese el valor de su temperatura en celsius: ");
     let resultado = (9/5 * temperatura) + 32;
     console.log(temperatura + "°C son "+ resultado + " grados en fahrenheit "); 
 };
-ComversionDeTemperatura()
+
 
 //input funcion calculadora IMC
 function calcularIMC(){
@@ -18,7 +18,7 @@ function calcularIMC(){
     let resultado = peso/(altura)**2
     console.log("su indice de masa corporal es : "+ resultado);
 }
-calcularIMC()
+
 
 // Función para generar nombre de usuario
 function generarNombreUsuario(){
@@ -33,7 +33,7 @@ function generarNombreUsuario(){
     // Mostrar el nombre de usuario combinado
     console.log("Nombre de usuario combinado: " + nombreUsuario);
 }
-generarNombreUsuario()
+
 
 //funcion para generar
 function Fibonacci() {
@@ -72,7 +72,7 @@ function Fibonacci() {
     }
 }
 
-Fibonacci();
+
 
 
 // menu 
@@ -89,17 +89,17 @@ function menu() {
     switch(option) {
         case '1':
             console.log('\nHas seleccionado la opcion 1.');
-            conversor();
+            ConversionDeTemperatura();
             menu();
         
         case '2':
             console.log('Has seleccionado la opcion 2.');
-            calculadora();
+            calcularIMC();
             menu();
         
         case '3':
             console.log('Has seleccionado la opcion 3.');
-            nombreDeUsuario();
+            generarNombreUsuario();
             menu();
 
         case '4':
@@ -108,8 +108,8 @@ function menu() {
             menu();
 
         case '5':
-            console.log('Has seleccionado la opcion 5.');
-            break;
+            console.log('Has seleccionado la opcion 5. Saliendo del programa');
+            return;
 
         default:
             console.log('\nNo has seleccionado ninguna opción del menú.')
