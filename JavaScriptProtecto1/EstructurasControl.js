@@ -1,3 +1,16 @@
+/*
+Fecha de publicación: 14-04-2024
+Hora de publicación: -----
+Versión de su código: 14
+Autores:Ing(c): Santiago Melo Angarita - Jorge Andres Valderrama Baron
+Versión del lenguaje utilizado: 6.0
+Descripción de la funcionalidad del programa:
+    Este programa contiene 3 funciones:
+        1. Función para generar un número entero aleatorio entre 0 y 100.
+        2. Función para calcular el factorial de un número ingresado por el usuario.
+        3. Función para contar las vocales en una frase ingresada por el usuario.
+        Además, incluye una función de menú que permite al usuario seleccionar y ejecutar estas funciones.
+*/
 const prompt= require("prompt-sync")(); // Importa el módulo 'prompt-sync' para solicitar entrada del usuario de forma síncrona
 
 function getRandomInt() {  // Función para generar un número entero aleatorio entre 0 y 100

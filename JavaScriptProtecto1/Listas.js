@@ -1,3 +1,16 @@
+/*
+Fecha de publicación: 14-04-2024
+Hora de publicación: -----
+Versión de su código: 14
+Autores: Ing(c): Santiago Melo Angarita - Jorge Andres Valderrama Baron
+Versión del lenguaje utilizado: 6.0
+Descripción de la funcionalidad del programa:
+    Este programa contiene 3 funciones:
+        1. Función para encontrar el mayor y menor número en una lista.
+        2. Función para concatenar y ordenar dos listas.
+        3. Función para invertir los elementos de una lista.
+*/
+
 function encontrarMayoresMenores(lista) { // Función para encontrar el mayor y menor número en una lista
     let maximo = Math.max(...lista);  // Utiliza Math.max para encontrar el valor máximo en la lista pasada
     let minimo = Math.min(...lista); // Utiliza Math.min para encontrar el valor mínimo en la lista pasada
