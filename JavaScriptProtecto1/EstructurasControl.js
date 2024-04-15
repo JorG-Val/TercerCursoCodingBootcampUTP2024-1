@@ -10,6 +10,13 @@ Descripción de la funcionalidad del programa:
         2. Función para calcular el factorial de un número ingresado por el usuario.
         3. Función para contar las vocales en una frase ingresada por el usuario.
         Además, incluye una función de menú que permite al usuario seleccionar y ejecutar estas funciones.
+Salvedades: 
+    1. En la Funcion de la calculadora factorial solo se podra recibir numeros enteros positivo, si se llega a ejecutar con decimales, 
+        fraccionarios o cualquier otro tipo de numero no se garantiza un resultado exitoso
+    2. En la funcion de contar vocales solo se recibira texto, en caso de subir numeros o caracteres especiales no se garantiza
+        un resultado exitoso
+    3. En el menu la unica forma de salir de este a la hora de ejecutarlo, es seleccionando la opcion 4. Salir del menú, de ninguna
+        otra forma podra salir de este menu
 */
 const prompt= require("prompt-sync")(); // Importa el módulo 'prompt-sync' para solicitar entrada del usuario de forma síncrona
 
