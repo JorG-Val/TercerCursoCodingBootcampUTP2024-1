@@ -31,6 +31,17 @@ Programa de Ingenieria de Sistemas y Computacion
         5.  Funcion que crea un menu en la consola con 5 opciones que se pueden seleccionar escribiendo el numero
             de la opcion. Cada opcion le corresponde a cada una de las funciones descritas anteriormente.
             Este menu solo lo deja de mostrar cuando se selecciona la opcion 5.
+-Salvedades:
+        1. En la funcion del conversor de °C a °F solo se adniten numeros enteros positivos, la digitacion de
+            cualquier otro tipo de numero o texto no garantizara el funcionamiento correcto del programa
+        2. En la funcion de Indice de Masa Corporal solo se aceptaran las medidas de peso en kilogramos y la
+            altura en metros, en caso de digitar otro tipo de numero como freaccionarios o texto no garantiza
+            el funcionamiento correcto del programa
+        3. En la funcion de Crear nomobre de usuario se recomienda el texto en las casillas de nombre y apellido,
+            y numeros enteros positivos en el año de nacimiento, para cumplir con el objetivo principal de este
+        4.  En la funcion fibonacci se recomienda usar solo enteros positivos para el funcionamiento correcto
+            del programa
+        5.   La unica forma correcta de salir del menu es seleccionando la opcion 5. Salir del menú
 */
 const prompt = require('prompt-sync')(); // Importa el módulo 'prompt-sync' para solicitar entrada del usuario de forma síncrona
 
