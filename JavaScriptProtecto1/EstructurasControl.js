@@ -6,23 +6,37 @@ Autores:Ing(c): Santiago Melo Angarita - Jorge Andres Valderrama Baron
 Versión del lenguaje utilizado: 6.0
 Descripción de la funcionalidad del programa:
     Este programa contiene 3 funciones:
-        1. Función para generar un número entero aleatorio entre 0 y 100.
+        1. Función para generar un numero entre 0 y 100 el cual debera ser adivinado por el usuario
         2. Función para calcular el factorial de un número ingresado por el usuario.
         3. Función para contar las vocales en una frase ingresada por el usuario.
         Además, incluye una función de menú que permite al usuario seleccionar y ejecutar estas funciones.
 Salvedades: 
-    1. En la Funcion de la calculadora factorial solo se podra recibir numeros enteros positivo, si se llega a ejecutar con decimales, 
+    1. En la funcion de adivinar un numero solo se aceptaran numeros enteros positivos entre 0 y 100
+    2. En la Funcion de la calculadora factorial solo se podra recibir numeros enteros positivo, si se llega a ejecutar con decimales, 
         fraccionarios o cualquier otro tipo de numero no se garantiza un resultado exitoso
-    2. En la funcion de contar vocales solo se recibira texto, en caso de subir numeros o caracteres especiales no se garantiza
+    3. En la funcion de contar vocales solo se recibira texto, en caso de subir numeros o caracteres especiales no se garantiza
         un resultado exitoso
-    3. En el menu la unica forma de salir de este a la hora de ejecutarlo, es seleccionando la opcion 4. Salir del menú, de ninguna
+    4. En el menu la unica forma de salir de este a la hora de ejecutarlo, es seleccionando la opcion 4. Salir del menú, de ninguna
         otra forma podra salir de este menu
 */
 const prompt= require("prompt-sync")(); // Importa el módulo 'prompt-sync' para solicitar entrada del usuario de forma síncrona
+function adivinarNumero() {  // Función para adivinar un número generado aleatoriamente
+    let numeroAleatorio = Math.floor(Math.random() * 101);    // Genera un número aleatorio entre 0 y 100 utilizando Math.random() y Math.floor
+    let intentos = 1;   // Inicializa el contador de intentos en 1
 
-function getRandomInt() {  // Función para generar un número entero aleatorio entre 0 y 100
-    console.log(Math.floor(Math.random()* 101 ));    // Utiliza Math.random() para obtener un número aleatorio entre 0 y 1, lo multiplica por 101 para obtener un número entre 0 y 100, y luego redondea hacia abajo con Math.floor
+    let intentoUsuario = prompt("Adivina el número (entre 0 y 100): ");    // Solicita al usuario que adivine el número
 
+    while (parseInt(intentoUsuario) !== numeroAleatorio) {    // Comprueba si el número ingresado por el usuario es igual al número aleatorio generado
+        if (parseInt(intentoUsuario) < numeroAleatorio) { // Comprueba si el número ingresado por el usuario es menor que el número aleatorio
+            console.log("El número es demasiado bajo");   // Imprime un mensaje indicando que el número es demasiado bajo
+        } else {    // Si el número ingresado por el usuario es mayor que el número aleatorio
+            console.log("El número es demasiado alto");    // Imprime un mensaje indicando que el número es demasiado alto
+        }
+        intentoUsuario = prompt("Adivina el número (entre 0 y 100): ");    // Solicita al usuario que vuelva a intentar adivinar el número
+        intentos++; // Incrementa el contador de intentos
+    }
+
+    console.log(`¡Felicidades! Adivinaste el número ${numeroAleatorio} en ${intentos} intentos.`);  // Imprime un mensaje indicando que el usuario ha adivinado correctamente el número y muestra la cantidad de intentos realizados
 }
 
 function calculadoraFactorial(){ // Función para calcular el factorial de un número ingresado por el usuario
@@ -55,7 +69,7 @@ function contarVocales() { // Función para contar las vocales en una frase ingr
 
 function menu() { // Función para mostrar un menú de opciones y ejecutar las funciones correspondientes
     console.log('\nMenú');
-    console.log('1). obtener un numero aleatorio.');
+    console.log('1). Adivina el numero.');
     console.log('2). Calculadora Factorial.');
     console.log('3). Contar Vocales.');
     console.log('4). Salir del menú');
@@ -66,7 +80,7 @@ function menu() { // Función para mostrar un menú de opciones y ejecutar las f
 
         case '1':
             console.log('Has seleccionado la opcion 1.');// Imprime un mensaje indicando que se ha seleccionado la opción 1
-            getRandomInt();// Llama a la función getRandomInt para obtener un número aleatorio
+            adivinarNumero();   // Llama a la función adivinarNumero para iniciar el juego de adivinar el número
             menu();// Llama recursivamente a la función menu para mostrar nuevamente el menú después de ejecutar la opción
         
         case '2':
