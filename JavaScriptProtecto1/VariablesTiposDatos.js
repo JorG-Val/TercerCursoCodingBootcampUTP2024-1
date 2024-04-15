@@ -1,6 +1,6 @@
 /*
 -Fecha de publicacion: 14-04-2024
--Hora de publicacion:-----
+-Hora de publicacion:9:20 PM
 -version de su codigo: 14
 -Autores: Ing(c): Santiago Melo Angarita - Jorge Andres Valderrama Baron
 -Version del lenguaje utilizado: 6.0
