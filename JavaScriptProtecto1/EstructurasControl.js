@@ -1,7 +1,7 @@
 /*
-Fecha de publicación: 14-04-2024
-Hora de publicación: 9:20 PM 
-Versión de su código: 14
+Fecha de publicación: 15-04-2024
+Hora de publicación: 9:07 AM
+Versión de su código: 18
 Autores:Ing(c): Santiago Melo Angarita - Jorge Andres Valderrama Baron
 Versión del lenguaje utilizado: 6.0
 Descripción de la funcionalidad del programa:
