@@ -10,18 +10,7 @@
 -Descripción de la funcionalidad del programa:
 Este programa imprime un rombo utilizando el carácter "z".
 */
-/*
--Fecha de publicación: 19-04-2024
--Hora de publicación: 9:10 AM
--Versión de su código: 20
--Autores:Ing(c): Jorge Andres Valderrama Baron
--Nombre del lenguaje : ECMASCRIPT
--Versión del lenguaje utilizado: 6.0
--Universidad Tecnológica de Pereira
--Programa de Ingeniería de Sistemas y Computación
--Descripción de la funcionalidad del programa:
-Este programa imprime un rombo utilizando el carácter "z".
-*/
+
 const rombo = () => { // Función para imprimir el rombo
   var filas = 4; // Número de filas del rombo
   for (var i = 0; i < filas; i++) {  // Se recorren las filas para construir la parte superior del rombo
