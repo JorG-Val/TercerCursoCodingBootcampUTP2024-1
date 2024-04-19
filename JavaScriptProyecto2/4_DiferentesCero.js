@@ -1,6 +1,6 @@
 /*
 -Fecha de publicación: 19-04-2024
--Hora de publicación: 12:12
+-Hora de publicación: 12:12 PM
 -Versión de su código: 22
 -Autores:Ing(c): Jorge Andres Valderrama - Mariand Evans - Juan Manuel Vargas Rios - Kevin leiton - Manuela Cardona - Santigo Melo
 -Nombre del lenguaje : ECMASCRIPT
