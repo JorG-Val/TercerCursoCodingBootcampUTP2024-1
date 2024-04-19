@@ -1,8 +1,8 @@
 /*
 -Fecha de publicación: 19-04-2024
--Hora de publicación: 9:10 AM
--Versión de su código: 21
--Autores:Ing(c): Jorge Andres Valderrama Baron
+-Hora de publicación: 12:12
+-Versión de su código: 22
+-Autores:Ing(c): Jorge Andres Valderrama - Mariand Evans - Juan Manuel Vargas Rios - Kevin leiton - Manuela Cardona - Santigo Melo
 -Nombre del lenguaje : ECMASCRIPT
 -Versión del lenguaje utilizado: 6.0
 -Universidad Tecnológica de Pereira
