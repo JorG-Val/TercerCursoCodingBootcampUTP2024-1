@@ -1,0 +1,73 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav {
+    background-color: black;
+    color: white;
+    width: 100%;
+  }
+  nav .mobile {
+    display: none;
+  }
+  
+  nav .logo {
+    min-width: 250px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+  }
+  
+  nav a:hover {
+    color: black;
+    background-color: rgb(9, 241, 21);
+  }
+  
+  nav .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  nav .desktop .primary,
+  nav .desktop .navbar {
+    display: flex;
+  }
+  .producto .imagen-producto {
+    width: 250px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    width: 250px;
+    margin: 20px;
+}
+nav {
+    position: fixed; /* Mantener fijo en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+    background-color: black;
+    color: white;
+}
+main {
+    margin-top: 60px; /* Ajusta según sea necesario para separar la barra de navegación */
+    display: flex;
+    justify-content: center;
+}
