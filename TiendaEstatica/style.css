@@ -59,15 +59,14 @@ body {
     margin: 20px;
 }
 nav {
-    position: fixed; /* Mantener fijo en la parte superior */
+    position: fixed; 
     top: 0;
     width: 100%;
-    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+    z-index: 1000; 
     background-color: black;
     color: white;
 }
 main {
-    margin-top: 60px; /* Ajusta según sea necesario para separar la barra de navegación */
-    display: flex;
+    margin-top: 60px; 
     justify-content: center;
 }
